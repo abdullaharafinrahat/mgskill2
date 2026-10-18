@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../engine/base.css">
+<style>html,body{margin:0;background:transparent}#wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}#stage{position:relative;overflow:hidden}#world{position:absolute;inset:0}#shape{position:absolute;overflow:hidden;background:linear-gradient(90deg,#B9C8FF 0%,#003EFF 100%);display:flex;align-items:center;justify-content:center}
+.ribbon{font-size:44px;font-weight:800;letter-spacing:-.02em;color:#fff;transform:skewX(-6deg)}</style></head><body>
+<div id="wrap"><div id="stage"><div id="world"><div id="shape">
+  <div id="ribbon" class="ribbon">Professional Work</div>
+</div></div></div></div>
+<script src="../engine/motion.js"></script>
+<script>
+const cfg={W:2560,H:1440,center:[1280,720],bg:"#05122E",
+ SH:{a:{w:0,h:0,r:999,bg:"#B9C8FF",cam:1},b:{w:760,h:96,r:999,bg:"#3A5AFF",cam:1.02}},
+ start:"a",SEQ:[[0,"a"],[0.55,"b"]],
+ layers:[{el:"ribbon",tin:0.65,tout:3.2}],
+ T:3.5,intro:0.02,
+ extra:(t,g)=>{const el=document.getElementById("ribbon"); el.style.transform=`skewX(-6deg) translateY(${Math.sin(t*2)*4}px)`}
+};M.scene(cfg);
+</script></body></html>

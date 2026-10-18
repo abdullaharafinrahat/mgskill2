@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "inputMode": "script",
+    "energy": "high",
+    "language": "mixed",
+    "paletteSource": "default_navy",
+    "palette": {
+      "bg": "#05122E",
+      "primary": "#0050FF",
+      "accent": "#00D1FF",
+      "accent2": "#E6FE00",
+      "maxPurpleRatio": 0.12
+    }
+  },
+  "video": {
+    "W": 2560,
+    "H": 1440,
+    "fps": 25,
+    "duration": 15,
+    "bpm": 128
+  },
+  "beats": [
+    {
+      "id": "01-hook",
+      "tIn": 0,
+      "tOut": 1.3,
+      "line": "\u09ac\u09b0\u09cd\u09a4\u09ae\u09be\u09a8\u09c7 \u09b8\u09ac\u099a\u09c7\u09af\u09bc\u09c7 \u09ac\u09c7\u09b6\u09bf competition",
+      "lang": "bn",
+      "template": "wipe",
+      "visual": "pixel-face + Bengali word tilted",
+      "SH": {
+        "a": {
+          "w": 0,
+          "h": 0,
+          "r": 999,
+          "bg": "#0050FF",
+          "cam": 1
+        },
+        "b": {
+          "w": 900,
+          "h": 220,
+          "r": 18,
+          "bg": "#0a1d4d",
+          "cam": 1.05
+        }
+      },
+      "SEQ": [
+        [
+          0,
+          "a"
+        ],
+        [
+          1.2,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "bengaliNow",
+          "tin": 0.6,
+          "tout": 2.0,
+          "o": {
+            "din": 0.07,
+            "lin": 0.26
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "type": "tick",
+          "at": 0.7,
+          "file": "click-soft.wav"
+        }
+      ]
+    },
+    {
+      "id": "02-wall",
+      "tIn": 1.3,
+      "tOut": 2.6,
+      "line": "YouTube thumbnail noise",
+      "lang": "en",
+      "template": "grid",
+      "visual": "MrBeast wall glass",
+      "SH": {
+        "a": {
+          "w": 900,
+          "h": 520,
+          "r": 20,
+          "bg": "#020A1E",
+          "cam": 1.05
+        },
+        "b": {
+          "w": 1100,
+          "h": 580,
+          "r": 20,
+          "bg": "#020A1E",
+          "cam": 1.22
+        }
+      },
+      "SEQ": [
+        [
+          1.3,
+          "a"
+        ],
+        [
+          2.0,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "t1",
+          "tin": 2.5,
+          "tout": 4.8
+        },
+        {
+          "el": "t2",
+          "tin": 2.7,
+          "tout": 4.8
+        },
+        {
+          "el": "center",
+          "tin": 2.9,
+          "tout": 4.9
+        }
+      ],
+      "sfx": [
+        {
+          "type": "whoosh",
+          "at": 2.2,
+          "file": "whoosh-soft-01.wav"
+        }
+      ]
+    },
+    {
+      "id": "02b-wall2",
+      "tIn": 2.6,
+      "tOut": 3.9,
+      "line": "Thumbnail noise continues",
+      "lang": "en",
+      "template": "pill",
+      "visual": "center card reveal",
+      "SH": {
+        "a": {
+          "w": 1100,
+          "h": 580,
+          "r": 20,
+          "bg": "#020A1E",
+          "cam": 1.22
+        },
+        "b": {
+          "w": 720,
+          "h": 120,
+          "r": 999,
+          "bg": "#0A1D4D",
+          "cam": 1.0
+        }
+      },
+      "SEQ": [
+        [
+          2.6,
+          "a"
+        ],
+        [
+          3.2,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "center",
+          "tin": 2.8,
+          "tout": 4.8
+        }
+      ],
+      "sfx": [
+        {
+          "type": "pop",
+          "at": 2.9,
+          "file": "pop-cork-02.wav"
+        }
+      ]
+    },
+    {
+      "id": "02c-wall3",
+      "tIn": 3.9,
+      "tOut": 5.0,
+      "line": "At desk you vs noise",
+      "lang": "en",
+      "template": "grid",
+      "visual": "center card",
+      "SH": {
+        "a": {
+          "w": 720,
+          "h": 120,
+          "r": 999,
+          "bg": "#0a1d4d",
+          "cam": 1.0
+        },
+        "b": {
+          "w": 900,
+          "h": 520,
+          "r": 20,
+          "bg": "#020A1E",
+          "cam": 1.1
+        }
+      },
+      "SEQ": [
+        [
+          3.9,
+          "a"
+        ],
+        [
+          4.4,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "center2",
+          "tin": 4.0,
+          "tout": 4.9
+        }
+      ],
+      "sfx": [
+        {
+          "type": "whoosh",
+          "at": 3.9,
+          "file": "whoosh-soft-01.wav"
+        }
+      ]
+    },
+    {
+      "id": "03-vercel",
+      "tIn": 5.0,
+      "tOut": 8.0,
+      "line": "Deploy with Vercel Frontend Cloud",
+      "lang": "en",
+      "template": "pill",
+      "visual": "Vercel logo pill fetch",
+      "SH": {
+        "a": {
+          "w": 1100,
+          "h": 580,
+          "r": 20,
+          "bg": "#020A1E",
+          "cam": 1.22
+        },
+        "b": {
+          "w": 720,
+          "h": 96,
+          "r": 999,
+          "bg": "#000000",
+          "cam": 1.0
+        }
+      },
+      "SEQ": [
+        [
+          5.0,
+          "a"
+        ],
+        [
+          5.8,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "vercelPill",
+          "tin": 5.9,
+          "tout": 7.8
+        }
+      ],
+      "sfx": [
+        {
+          "type": "pop",
+          "at": 5.9,
+          "file": "pop-cork-02.wav"
+        }
+      ]
+    },
+    {
+      "id": "04-money",
+      "tIn": 8.0,
+      "tOut": 11.0,
+      "line": "Paid $750 plus 100 percent growth",
+      "lang": "en",
+      "template": "phone",
+      "visual": "iPhone $12M float cards",
+      "SH": {
+        "a": {
+          "w": 720,
+          "h": 96,
+          "r": 999,
+          "bg": "#000000",
+          "cam": 1.0
+        },
+        "b": {
+          "w": 420,
+          "h": 840,
+          "r": 36,
+          "bg": "#0A0A0A",
+          "cam": 1.18
+        }
+      },
+      "SEQ": [
+        [
+          8.0,
+          "a"
+        ],
+        [
+          8.6,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "phone",
+          "tin": 8.7,
+          "tout": 10.8
+        },
+        {
+          "el": "c1",
+          "tin": 9.0,
+          "tout": 10.6
+        }
+      ],
+      "sfx": [
+        {
+          "type": "shutter",
+          "at": 8.7,
+          "file": "shutter-01.wav"
+        }
+      ]
+    },
+    {
+      "id": "05-cta",
+      "tIn": 11.0,
+      "tOut": 15.0,
+      "line": "Start now \u2014 motion graphics",
+      "lang": "en",
+      "template": "ribbon",
+      "visual": "wavy CTA ribbon",
+      "SH": {
+        "a": {
+          "w": 420,
+          "h": 840,
+          "r": 36,
+          "bg": "#0A0A0A",
+          "cam": 1.18
+        },
+        "b": {
+          "w": 860,
+          "h": 110,
+          "r": 999,
+          "bg": "#003EFF",
+          "cam": 0.92
+        }
+      },
+      "SEQ": [
+        [
+          11.0,
+          "a"
+        ],
+        [
+          11.6,
+          "b"
+        ]
+      ],
+      "layers": [
+        {
+          "el": "ribbon",
+          "tin": 11.7,
+          "tout": 14.8
+        }
+      ],
+      "sfx": [
+        {
+          "type": "chime",
+          "at": 11.7,
+          "file": "chime-success.wav"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "type": "fetch",
+      "query": "Vercel logo SVG official",
+      "beatId": "03-vercel",
+      "reason": "Real org Vercel",
+      "fallback": "generate",
+      "expectedPath": "output/assets/fetch_a1.svg"
+    },
+    {
+      "id": "a2",
+      "type": "generate",
+      "query": "iPhone 15 Pro black dark screen $12,440,000 floating PayPal cards, navy #05122E, neon cyan 2px",
+      "beatId": "04-money",
+      "reason": "Conceptual mock",
+      "fallback": "mock",
+      "expectedPath": "output/assets/gen_a2.png"
+    },
+    {
+      "id": "a3",
+      "type": "mock",
+      "query": "Stat $12,440,000 skeleton",
+      "beatId": "04-money",
+      "reason": "Stat without source -> mock",
+      "fallback": "none",
+      "expectedPath": "output/assets/mock_a3.svg"
+    }
+  ],
+  "render": {
+    "clips": [
+      "output/clips/01-hook.mp4"
+    ],
+    "final": "output/final.mp4",
+    "transparentPanels": false
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../engine/base.css">
+<style>
+  html,body{margin:0;background:transparent}
+  #wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  #stage{position:relative;overflow:hidden;background:transparent}
+  #world{position:absolute;inset:0}
+  #shape{position:absolute;background:var(--bg);display:flex;align-items:center;justify-content:center;color:#fff}
+  .pill{padding:18px 36px;border-radius:999px;font-weight:800;font-size:42px;letter-spacing:-.02em;box-shadow:0 16px 40px rgba(0,0,0,.35)}
+  .dot{width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 18px #fff;display:inline-block;margin-left:16px;vertical-align:middle}
+</style></head><body>
+<div id="wrap"><div id="stage"><div id="world"><div id="shape">
+  <div id="label" class="pill">Editing Psychology <span class="dot"></span></div>
+</div></div></div></div>
+<div id="cursor" style="position:absolute;width:46px;height:46px;pointer-events:none"></div>
+<script src="../engine/motion.js"></script>
+<script>
+// Demo pill scene — copy to output/scenes/XX-*.html and replace SH/SEQ/layers
+const cfg={
+  W:2560,H:1440,center:[1280,720],bg:"#05122E",
+  SH:{
+    a:{w:0,h:0,r:999,bg:"#0050FF",cam:1},
+    b:{w:720,h:96,r:999,bg:"#0A4DFF",cam:1.05}
+  },
+  start:"a", SEQ:[[0,"a"],[0.6,"b"]],
+  layers:[
+    {el:"label",tin:0.68,tout:2.8,anchor:"c"}
+  ],
+  T:3.2, intro:0.02
+};
+M.scene(cfg);
+</script></body></html>

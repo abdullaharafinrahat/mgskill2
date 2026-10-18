@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../engine/base.css">
+<style>html,body{margin:0;background:transparent}#wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}#stage{position:relative;overflow:hidden}#world{position:absolute;inset:0}#shape{position:absolute;overflow:hidden;background:#0A0A0A;display:flex;align-items:center;justify-content:center}
+.phone{width:360px;height:760px;background:#111;border-radius:36px;border:8px solid #1a1a1a;box-shadow:0 16px 40px rgba(0,0,0,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
+.card{position:absolute;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:14px 18px;color:#fff;font-weight:700}
+</style></head><body>
+<div id="wrap"><div id="stage"><div id="world"><div id="shape">
+  <div class="phone" id="phone"><div style="font-size:34px;font-weight:800">$12,440,000</div><div style="opacity:.7;margin-top:8px">Account Balance</div></div>
+  <div id="c1" class="card" style="left:20px;top:40px">PayPal +$750.00</div>
+  <div id="c2" class="card" style="right:20px;bottom:80px">↗ 100%</div>
+</div></div></div></div>
+<script src="../engine/motion.js"></script>
+<script>
+const cfg={W:2560,H:1440,center:[1280,720],bg:"#05122E",
+ SH:{a:{w:0,h:0,r:999,bg:"#0A0A0A",cam:1},b:{w:420,h:840,r:36,bg:"#0A0A0A",cam:1.18}},
+ start:"a",SEQ:[[0,"a"],[0.5,"b"]],
+ layers:[{el:"phone",tin:0.58,tout:3.8},{el:"c1",tin:0.9,tout:3.6},{el:"c2",tin:1.1,tout:3.4}],
+ T:4.0,intro:0.02
+};M.scene(cfg);
+</script></body></html>

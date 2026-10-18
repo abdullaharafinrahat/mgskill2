@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../engine/base.css">
+<style>html,body{margin:0;background:transparent}#wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}#stage{position:relative;overflow:hidden}#world{position:absolute;inset:0}#shape{position:absolute;background:#020A1E;overflow:hidden}
+.tile{position:absolute;width:420px;height:240px;background:#0A1932;border:1px solid #1E3A5E;border-radius:16px;box-shadow:0 0 0 2px #00D1FF, 0 0 18px rgba(0,209,255,.35);display:flex;align-items:center;justify-content:center;color:#5AA0FF}
+</style></head><body>
+<div id="wrap"><div id="stage"><div id="world"><div id="shape">
+  <div id="t1" class="tile" style="left:40px;top:40px">Thumbnail A</div>
+  <div id="t2" class="tile" style="right:40px;top:40px">Thumbnail B</div>
+  <div id="center" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;color:#020A1E;padding:32px 48px;border-radius:20px;font-weight:800;box-shadow:0 16px 40px rgba(0,0,0,.35)">At Desk — You vs Noise</div>
+</div></div></div></div>
+<script src="../engine/motion.js"></script>
+<script>
+const cfg={W:2560,H:1440,center:[1280,720],bg:"#05122E",
+ SH:{a:{w:0,h:0,r:16,bg:"#020A1E",cam:1},b:{w:900,h:520,r:20,bg:"#020A1E",cam:1.22}},
+ start:"a",SEQ:[[0,"a"],[0.6,"b"]],
+ layers:[{el:"t1",tin:0.7,tout:3.5},{el:"t2",tin:0.85,tout:3.5},{el:"center",tin:1.0,tout:3.6}],
+ T:4.0,intro:0.02,
+ geom:(t,g)=>{g.fx=Math.sin(t*0.4)*18; return g;}
+};M.scene(cfg);
+</script></body></html>
